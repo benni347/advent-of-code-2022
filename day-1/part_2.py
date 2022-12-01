@@ -15,7 +15,7 @@ def read_file():
         for line in file:
             local_content.append(str(line.strip("\n")))
         file.close()
-    local_content.append('')
+    local_content.append("")
     return local_content
 
 
@@ -32,7 +32,7 @@ def check(calorie_param):
     second = 0
     third = 0
     for i, calorie_data in enumerate(calorie_param):
-        if calorie_data in ("\n", ''):
+        if calorie_data in ("\n", ""):
             i += 1
             highest_copy = highest
             second_copy = second

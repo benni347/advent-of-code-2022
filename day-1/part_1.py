@@ -29,7 +29,7 @@ def check(calorie_param):
     current_elf = 0
     current_highest = 0
     for i, calorie_data in enumerate(calorie_param):
-        if calorie_data in ("\n", ''):
+        if calorie_data in ("\n", ""):
             i += 1
             current_highest = max(current_highest, current_elf)
             current_elf = 0
