@@ -38,7 +38,8 @@ def find_common(rucksack_param):
         for _, data_first in enumerate(first_elv):
             for _, data_second in enumerate(second_elv):
                 for _, data_third in enumerate(third_elv):
-                    if data_first == data_second and data_first == data_third and data_second == data_third:
+                    if (data_first == data_second and data_first == data_third
+                            and data_second == data_third):
                         common.append(data_first)
                         # print(common)
                     if current_len_of_common != len(common):
